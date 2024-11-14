@@ -1,0 +1,26 @@
+#Program #2:
+#Clara Riley
+#Luke Snell
+#11/13/24
+
+import tkinter as tk
+
+def show_info():
+    info_label.config(text="Clara Riley\n213 East Benton St\nLake Benton, MN")
+
+def quit_program():
+    root.destroy()
+
+root = tk.Tk()
+root.title("Info Display")
+
+info_label = tk.Label(root, text="")
+info_label.pack(pady=10)
+
+show_button = tk.Button(root, text="Show Info", command=show_info)
+show_button.pack(pady=5)
+
+quit_button = tk.Button(root, text="Quit", command=quit_program)
+quit_button.pack(pady=5)
+
+root.mainloop()
